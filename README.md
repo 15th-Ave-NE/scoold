@@ -1,4 +1,3 @@
-![Scoold Q&A](https://raw.githubusercontent.com/Erudika/scoold/master/assets/header.png)
 
 ## Scoold - Stack Overflow in a JAR
 
