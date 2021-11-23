@@ -2,9 +2,9 @@
 				 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.erudika</groupId>
+	<groupId>15thavene</groupId>
 	<artifactId>scoold</artifactId>
-	<version>1.46.5</version>
+	<version>1.46.7</version>
 	<packaging>${packaging.type}</packaging>
 
 	<parent>
@@ -14,45 +14,12 @@
 	</parent>
 
 	<organization>
-		<name>Erudika</name>
-		<url>https://erudika.com</url>
+		<name>15thavene</name>
+		<url>15thavene.org</url>
 	</organization>
 
-	<name>Scoold</name>
-	<description>Scoold is an open source Q and A platform written in Java.</description>
-	<url>https://scoold.com</url>
-
-	<developers>
-		<developer>
-			<id>albogdano</id>
-			<name>Alex Bogdanovski</name>
-			<email>alex@erudika.com</email>
-			<url>https://github.com/albogdano</url>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<properties>
-				<picUrl>http://0.gravatar.com/avatar/5aee63b92a66153f25798ad494255b33</picUrl>
-			</properties>
-		</developer>
-	</developers>
-
-	<scm>
-		<connection>scm:git:https://github.com/Erudika/scoold.git</connection>
-		<developerConnection>scm:git:git@github.com:Erudika/scoold.git</developerConnection>
-		<url>https://github.com/Erudika/scoold</url>
-		<tag>HEAD</tag>
-	</scm>
-
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/Erudika/scoold/issues</url>
-	</issueManagement>
-
-	<ciManagement>
-		<system>Travis CI</system>
-		<url>https://travis-ci.org/Erudika/scoold</url>
-	</ciManagement>
+	<name>15thavene</name>
+	<url>15thavene.org</url>
 
 	<properties>
 		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -81,10 +48,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<exclusions>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-tomcat</artifactId>
-				</exclusion>
 				<exclusion>
 					<groupId>org.hibernate</groupId>
 					<artifactId>hibernate-validator</artifactId>
