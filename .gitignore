@@ -28,3 +28,6 @@ data/
 old/
 .idea/
 *.log
+
+
+application.conf
