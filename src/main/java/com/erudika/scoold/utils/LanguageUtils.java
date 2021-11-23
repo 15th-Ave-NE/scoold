@@ -33,7 +33,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import org.slf4j.Logger;
-import org.apache.commons.lang3.LocaleUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -52,13 +51,7 @@ public class LanguageUtils {
 
 	private static final Map<String, Locale> ALL_LOCALES = new HashMap<String, Locale>();
 	static {
-		for (Locale loc : LocaleUtils.availableLocaleList()) {
-			String locstr = loc.getLanguage();
-			if (!StringUtils.isBlank(locstr)) {
-				ALL_LOCALES.putIfAbsent(locstr, Locale.forLanguageTag(locstr));
-			}
-		}
-		ALL_LOCALES.remove("zh");
+		ALL_LOCALES.putIfAbsent(Locale.ENGLISH.toString(), Locale.ENGLISH);
 		ALL_LOCALES.putIfAbsent(Locale.SIMPLIFIED_CHINESE.toString(), Locale.SIMPLIFIED_CHINESE);
 		ALL_LOCALES.putIfAbsent(Locale.TRADITIONAL_CHINESE.toString(), Locale.TRADITIONAL_CHINESE);
 	}
