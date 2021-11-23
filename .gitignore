@@ -18,12 +18,13 @@ scoold-search/build/
 scoold-search/nbproject/
 scoold-search/lib/
 scoold-search/target/
-target/
+target/*
+!target/scoold-*.jar
 tmp/
 src/main/webapp/WEB-INF/lib/**
 src/web/src/main/webapp/WEB-INF/classes/
 src/main/webapp/click/
 data/
 old/
-
+.idea/
 *.log
