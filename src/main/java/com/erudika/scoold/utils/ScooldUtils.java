@@ -1436,9 +1436,9 @@ public final class ScooldUtils {
 			return getServerURL() + CONTEXT_PATH +  PEOPLELINK + "/avatar";
 		}
 		if (StringUtils.isBlank(email)) {
-			return "https://www.gravatar.com/avatar?d=retro&size=400";
+			return "https://www.gravatar.com/avatar?size=400";
 		}
-		return "https://www.gravatar.com/avatar/" + Utils.md5(email.toLowerCase()) + "?size=400&d=retro";
+		return "https://www.gravatar.com/avatar/" + Utils.md5(email.toLowerCase()) + "?size=400";
 	}
 
 	public static String getGravatar(Profile profile) {
@@ -1446,7 +1446,7 @@ public final class ScooldUtils {
 			return getServerURL() + CONTEXT_PATH +  PEOPLELINK + "/avatar";
 		}
 		if (profile == null || profile.getUser() == null) {
-			return "https://www.gravatar.com/avatar?d=retro&size=400";
+			return "https://www.gravatar.com/avatar?size=400";
 		} else {
 			return getGravatar(profile.getUser().getEmail());
 		}
