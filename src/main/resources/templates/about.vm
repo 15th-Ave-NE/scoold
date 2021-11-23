@@ -171,9 +171,7 @@
 
 	<h2>$!lang.get("contact.title")</h2>
 	<p>
-		<a href="mailto:contact@scoold.com">$!lang.get("signup.form.email")</a> &bull;
-		<a href="https://github.com/Erudika/scoold">GitHub</a> &bull;
-		<a href="https://twitter.com/getscoold">Twitter</a>
+		<a href="mailto:admin@15thavene.org">$!lang.get("signup.form.email")</a>
 	</p>
 	#end
 	<div class="viewbox">

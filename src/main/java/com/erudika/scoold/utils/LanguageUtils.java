@@ -53,7 +53,6 @@ public class LanguageUtils {
 	static {
 		ALL_LOCALES.putIfAbsent(Locale.ENGLISH.toString(), Locale.ENGLISH);
 		ALL_LOCALES.putIfAbsent(Locale.SIMPLIFIED_CHINESE.toString(), Locale.SIMPLIFIED_CHINESE);
-		ALL_LOCALES.putIfAbsent(Locale.TRADITIONAL_CHINESE.toString(), Locale.TRADITIONAL_CHINESE);
 	}
 
 	private static final Map<String, Map<String, String>> LANG_CACHE =
