@@ -37,6 +37,8 @@ import java.util.Map;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Controller;
@@ -62,6 +64,7 @@ import org.springframework.web.util.HtmlUtils;
  * @author Alex Bogdanovski [alex@erudika.com]
  */
 @Controller
+@Slf4j
 public class QuestionsController {
 
 	private final ScooldUtils utils;
@@ -75,9 +78,6 @@ public class QuestionsController {
 
 	@GetMapping({"/", "/questions"})
 	public String get(@RequestParam(required = false) String sortby, HttpServletRequest req, Model model) {
-		if (!utils.isDefaultSpacePublic() && !utils.isAuthenticated(req)) {
-			return "redirect:" + SIGNINLINK + "?returnto=" + QUESTIONSLINK;
-		}
 		getQuestions(sortby, null, req, model);
 		model.addAttribute("path", "questions.vm");
 		model.addAttribute("title", utils.getLang(req).get("questions.title"));
@@ -281,13 +281,13 @@ public class QuestionsController {
 		}
 	}
 
-	public List<Question> getQuestions(String sortby, String filter, HttpServletRequest req, Model model) {
-		Pager itemcount = getPagerFromCookie(req, utils.getPager("page", req));
+	public List<Question> getQuestions(final String sortby, final String filter, final HttpServletRequest req, final Model model) {
+		final Pager itemcount = getPagerFromCookie(req, utils.getPager("page", req));
 		List<Question> questionslist = Collections.emptyList();
-		String type = Utils.type(Question.class);
-		Profile authUser = utils.getAuthUser(req);
-		String currentSpace = utils.getSpaceIdFromCookie(authUser, req);
-		String query = getQuestionsQuery(req, authUser, sortby, currentSpace, itemcount);
+		final String type = Utils.type(Question.class);
+		final Profile authUser = utils.getAuthUser(req);
+		final String currentSpace = utils.getSpaceIdFromCookie(authUser, req);
+		final String query = getQuestionsQuery(req, authUser, sortby, currentSpace, itemcount);
 
 		if (!StringUtils.isBlank(filter) && authUser != null) {
 			if ("favtags".equals(filter)) {
@@ -316,9 +316,9 @@ public class QuestionsController {
 		}
 
 		if (utils.postsNeedApproval() && utils.isMod(authUser)) {
-			Pager p = new Pager(itemcount.getPage(), itemcount.getLimit());
-			List<UnapprovedQuestion> uquestionslist = pc.findQuery(Utils.type(UnapprovedQuestion.class), query, p);
-			List<Question> qlist = new LinkedList<>(uquestionslist);
+			final Pager p = new Pager(itemcount.getPage(), itemcount.getLimit());
+			final List<UnapprovedQuestion> uquestionslist = pc.findQuery(Utils.type(UnapprovedQuestion.class), query, p);
+			final List<Question> qlist = new LinkedList<>(uquestionslist);
 			itemcount.setCount(itemcount.getCount() + p.getCount());
 			qlist.addAll(questionslist);
 			questionslist = qlist;
