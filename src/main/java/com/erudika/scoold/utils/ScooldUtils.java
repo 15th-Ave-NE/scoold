@@ -373,7 +373,8 @@ public final class ScooldUtils {
 					s.addProperty(Config._EMAIL_TOKEN, token);
 					pc.update(s);
 					token = getServerURL() + CONTEXT_PATH + SIGNINLINK + "/register?id=" + user.getId() + "&token=" + token;
-					body3 = "<b><a href=\"" + token + "\">" + lang.get("signin.welcome.verify") + "</a></b><br><br>" + body3;
+					body3 = "<b><a href=\"" + token + "\">" + lang.get("signin.welcome.verify") + "</a></b><br>"
+						+ lang.get("signin.welcome.verify.alter") + "<br>" + token + "<br><br>" + body3;
 				}
 			}
 
