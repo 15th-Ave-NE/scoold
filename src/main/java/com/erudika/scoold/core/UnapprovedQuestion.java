@@ -17,10 +17,7 @@
  */
 package com.erudika.scoold.core;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 public class UnapprovedQuestion extends Question {
 	private static final long serialVersionUID = 1L;
 }

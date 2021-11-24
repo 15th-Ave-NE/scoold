@@ -33,10 +33,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import static com.erudika.scoold.ScooldServer.LANGUAGESLINK;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @RequestMapping("/languages")
 public class LanguagesController {

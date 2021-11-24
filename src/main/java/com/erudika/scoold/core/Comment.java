@@ -27,10 +27,7 @@ import java.util.Collections;
 import java.util.Objects;
 import org.apache.commons.lang3.StringUtils;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 public class Comment extends Sysprop {
 
 	private static final long serialVersionUID = 1L;

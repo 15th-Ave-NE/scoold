@@ -30,10 +30,6 @@ import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 
-/**
- * A simple JavaMail implementation of {@link Emailer}.
- * @author Alex Bogdanovski [alex@erudika.com]
- */
 public class ScooldEmailer implements Emailer {
 
 	private static final Logger logger = LoggerFactory.getLogger(ScooldEmailer.class);

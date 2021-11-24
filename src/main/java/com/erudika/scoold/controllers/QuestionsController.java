@@ -59,10 +59,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import org.springframework.web.util.HtmlUtils;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @Slf4j
 public class QuestionsController {

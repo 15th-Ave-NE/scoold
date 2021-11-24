@@ -25,10 +25,6 @@ import com.erudika.scoold.utils.ScooldUtils;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.Objects;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
 public class Revision extends Sysprop {
 	private static final long serialVersionUID = 1L;
 

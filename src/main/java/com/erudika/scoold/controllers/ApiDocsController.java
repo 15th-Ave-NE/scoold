@@ -35,10 +35,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.yaml.snakeyaml.Yaml;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 public class ApiDocsController {
 

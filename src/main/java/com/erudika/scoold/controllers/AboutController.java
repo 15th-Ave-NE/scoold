@@ -32,10 +32,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @RequestMapping("/about")
 public class AboutController {

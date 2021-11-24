@@ -17,10 +17,7 @@
  */
 package com.erudika.scoold.utils;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 public class UnauthorizedException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;

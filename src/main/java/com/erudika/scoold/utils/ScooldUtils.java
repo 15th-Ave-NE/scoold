@@ -100,10 +100,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
 @Component
 @Named
 public final class ScooldUtils {

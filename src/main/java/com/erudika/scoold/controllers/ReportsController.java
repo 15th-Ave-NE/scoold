@@ -41,10 +41,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import static com.erudika.scoold.ScooldServer.REPORTSLINK;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
 @Controller
 @RequestMapping("/reports")
 public class ReportsController {

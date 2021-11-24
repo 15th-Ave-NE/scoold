@@ -47,10 +47,7 @@ import com.erudika.scoold.core.Question;
 import com.erudika.scoold.core.Reply;
 import java.util.ArrayList;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @RequestMapping("/profile")
 public class ProfileController {

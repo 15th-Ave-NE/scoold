@@ -68,10 +68,7 @@ import java.util.Set;
 import javax.ws.rs.Produces;
 import org.springframework.http.ResponseEntity;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @RequestMapping("/question")
 public class QuestionController {

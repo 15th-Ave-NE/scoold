@@ -48,10 +48,6 @@ import org.apache.hc.core5.http.HttpStatus;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 
-/**
- * Various utilities for HTTP stuff - cookies, AJAX, etc.
- * @author Alex Bogdanovski [alex@erudika.com]
- */
 public final class HttpUtils {
 
 	private static CloseableHttpClient httpclient;

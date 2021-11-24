@@ -23,10 +23,7 @@ import com.erudika.para.client.ParaClient;
 import com.erudika.scoold.utils.ScooldUtils;
 import java.util.Objects;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 public class Report extends Sysprop {
 	private static final long serialVersionUID = 1L;
 

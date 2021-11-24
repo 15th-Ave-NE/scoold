@@ -45,10 +45,6 @@ import org.apache.commons.lang3.StringUtils;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
 public abstract class Post extends Sysprop {
 
 	private static final long serialVersionUID = 1L;

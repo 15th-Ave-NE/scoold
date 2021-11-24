@@ -33,10 +33,7 @@ import static com.erudika.scoold.ScooldServer.QUESTIONSLINK;
 import com.erudika.scoold.core.Profile;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @RequestMapping("/revisions")
 public class RevisionsController {

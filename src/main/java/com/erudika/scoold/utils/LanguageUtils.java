@@ -37,12 +37,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-/**
- * Utility class for language operations.
- * These can be used to build a crowdsourced translation system.
- * @author Alex Bogdanovski [alex@erudika.com]
- * @see Translation
- */
+
 @Component
 @Singleton
 public class LanguageUtils {

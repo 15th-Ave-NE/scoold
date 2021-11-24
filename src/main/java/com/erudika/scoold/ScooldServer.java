@@ -50,10 +50,6 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
 @SpringBootApplication
 public class ScooldServer extends SpringBootServletInitializer {
 

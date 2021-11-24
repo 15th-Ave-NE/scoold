@@ -93,10 +93,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 
-/**
- * Scoold REST API
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @RestController
 @RequestMapping(value = "/api", produces = "application/json")
 @SuppressWarnings("unchecked")

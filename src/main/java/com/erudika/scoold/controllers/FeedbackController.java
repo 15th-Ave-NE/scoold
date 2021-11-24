@@ -48,10 +48,7 @@ import static com.erudika.scoold.ScooldServer.SIGNINLINK;
 import static com.erudika.scoold.ScooldServer.FEEDBACKLINK;
 import static com.erudika.scoold.ScooldServer.HOMEPAGE;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @RequestMapping("/feedback")
 public class FeedbackController {

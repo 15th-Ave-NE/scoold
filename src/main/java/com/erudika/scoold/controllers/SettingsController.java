@@ -41,10 +41,7 @@ import static com.erudika.scoold.ScooldServer.SIGNINLINK;
 import static com.erudika.scoold.ScooldServer.SETTINGSLINK;
 import java.util.List;
 
-/**
- *
- * @author Alex Bogdanovski [alex@erudika.com]
- */
+
 @Controller
 @RequestMapping("/settings")
 public class SettingsController {
