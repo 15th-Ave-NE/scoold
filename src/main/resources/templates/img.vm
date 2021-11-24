@@ -27,7 +27,7 @@
 		<div class="content">
 			<div class="row">
 				<div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 align-self-center">
-					<h1 class="text-center title">Image Uploader</h1>
+					<h1 class="text-center title">$!lang.get("img.upload.section.subject")</h1>
 ##					<form method="POST" enctype="multipart/form-data">
 						<div class="input-group mb-3">
 							<input type="file" id="file" name="file" accept="image/*" class="form-control"
@@ -35,12 +35,12 @@
 								   aria-label="Click to select image to upload" aria-describedby="basic-addon2">
 							<div class="input-group-append">
 								<button id="upload" class="btn btn-primary">
-									Upload
+									$!lang.get("img.upload.button")
 								</button>
 							</div>
 						</div>
 ##					</form>
-					<p class="text-right">Maximum supported image size is 5MB</p>
+					<p class="text-right">$!lang.get("img.upload.limit") 5MB</p>
 				</div>
 			</div>
 		</div>
