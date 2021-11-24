@@ -96,7 +96,7 @@ public class QuestionController {
 			return "redirect:" + QUESTIONSLINK;
 		}
 		Profile authUser = utils.getAuthUser(req);
-		if (!utils.canAccessSpace(authUser, showPost.getSpace())) {
+		if (authUser != null && !utils.canAccessSpace(authUser, showPost.getSpace())) {
 			return "redirect:" + (utils.isDefaultSpacePublic() || utils.isAuthenticated(req) ?
 					QUESTIONSLINK : SIGNINLINK + "?returnto=" + req.getRequestURI());
 		} else if (!utils.isDefaultSpace(showPost.getSpace()) && pc.read(utils.getSpaceId(showPost.getSpace())) == null) {
