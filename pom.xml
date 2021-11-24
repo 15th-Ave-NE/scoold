@@ -4,7 +4,7 @@
 
 	<groupId>15thavene</groupId>
 	<artifactId>scoold</artifactId>
-	<version>1.46.11</version>
+	<version>1.46.12</version>
 	<packaging>${packaging.type}</packaging>
 
 	<parent>

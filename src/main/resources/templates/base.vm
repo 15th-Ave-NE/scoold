@@ -239,6 +239,7 @@
  												 class="$!{signinSelected}">$!lang.get("signin.title")</a></li>
  								#end
  								<li><a href="$questionslink/ask" title="$!lang.get('posts.ask')" class="$!{askSelected}">$!lang.get("posts.ask")</a></li>
+								<li><a href="$imgcenterlink" title="$!lang.get('img.title')" class="$!{imgcenterSelected}">$!lang.get("img.title")</a></li>
  								<li><a href="$questionslink" title="$!lang.get('questions.title')" class="$!{questionsSelected}">$!lang.get("questions.title")</a></li>
  								<li><a href="$peoplelink" title="$!lang.get('people.title')" class="$!{peopleSelected}">$!lang.get("people.title")</a></li>
  								<li><a href="$tagslink" title="$!lang.get('tags.title')" class="$!{tagsSelected}">$!lang.get("tags.title")</a></li>
