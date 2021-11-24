@@ -18,7 +18,6 @@
 package com.erudika.scoold.utils;
 
 import com.erudika.para.client.ParaClient;
-import com.erudika.para.core.Translation;
 import com.erudika.para.core.Sysprop;
 import com.erudika.para.utils.Config;
 import java.io.InputStream;

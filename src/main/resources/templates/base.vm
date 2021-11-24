@@ -81,6 +81,7 @@
  								<li><a href="$peoplelink" title="$!lang.get('people.title')" class="$!{peopleSelected}">$!lang.get("people.title")</a></li>
  								<li><a href="$tagslink" title="$!lang.get('tags.title')" class="$!{tagsSelected}">$!lang.get("tags.title")</a></li>
  								<li><a href="$questionslink/ask" title="$!lang.get('posts.ask')" class="$!{askSelected}">$!lang.get("posts.ask")</a></li>
+								<li><a href="$imgcenterlink" title="$!lang.get('img.title')" class="$!{imgcenterSelected}">$!lang.get("img.title")</a></li>
  								#customnavbarlinks()
  								#if ($authenticated && $isMod)
  									<li>

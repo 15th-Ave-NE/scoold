@@ -158,6 +158,7 @@ public class ScooldRequestInterceptor implements HandlerInterceptor {
 		modelAndView.addObject("voteuplink", CONTEXT_PATH + VOTEUPLINK);
 		modelAndView.addObject("questionlink", CONTEXT_PATH + QUESTIONLINK);
 		modelAndView.addObject("questionslink", CONTEXT_PATH + QUESTIONSLINK);
+		modelAndView.addObject("imgcenterlink", CONTEXT_PATH + IMGCENTERLINK);
 		modelAndView.addObject("commentlink", CONTEXT_PATH + COMMENTLINK);
 		modelAndView.addObject("postlink", CONTEXT_PATH + POSTLINK);
 		modelAndView.addObject("revisionslink", CONTEXT_PATH + REVISIONSLINK);

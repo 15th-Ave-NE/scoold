@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="$!styleslink/bootstrap.min.css">
+<style type="text/css">
+	#progress, #alert, #aws-link  {
+		visibility: hidden;
+	}
+</style>
+
+<div class="page-wrapper">
+	<h2>$!lang.get("img.title")</h2>
+	<hr>
+
+	<div class="viewbox">
+		<div id="progress" class="progress">
+			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated"
+				 role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+				 style="width: 0%"></div>
+		</div>
+
+		<div id="alert" class="alert alert-dismissible fade show" role="alert">
+			<h5 id="alert-heading" class="alert-heading">Upload Completed!</h5>
+			<p id="message"></p>
+			<p><a id="aws-link" target="_blank" href="#"></a></p>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 align-self-center">
+					<h1 class="text-center title">Image Uploader</h1>
+##					<form method="POST" enctype="multipart/form-data">
+						<div class="input-group mb-3">
+							<input type="file" id="file" name="file" accept="image/*" class="form-control"
+								   placeholder="Click to select image to upload"
+								   aria-label="Click to select image to upload" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<button id="upload" class="btn btn-primary">
+									Upload
+								</button>
+							</div>
+						</div>
+##					</form>
+					<p class="text-right">Maximum supported image size is 5MB</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script nonce="$cspNonce" src="$!scriptslink/jquery.min.js"></script>
+<script nonce="$cspNonce" src="$!scriptslink/bootstrap.min.js"></script>
+<script nonce="$cspNonce" src="$!scriptslink/img_upload.js"></script>

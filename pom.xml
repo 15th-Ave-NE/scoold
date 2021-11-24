@@ -112,6 +112,13 @@
 			<version>1.18.22</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<!--	aws	-->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>1.11.343</version>
+		</dependency>
 	</dependencies>
 
 	<build>

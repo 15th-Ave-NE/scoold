@@ -119,6 +119,7 @@ public class ScooldServer extends SpringBootServletInitializer {
 	public static final String VOTEUPLINK = HOMEPAGE + "voteup";
 	public static final String QUESTIONLINK = HOMEPAGE + "question";
 	public static final String QUESTIONSLINK = HOMEPAGE + "questions";
+	public static final String IMGCENTERLINK = HOMEPAGE + "img";
 	public static final String COMMENTLINK = HOMEPAGE + "comment";
 	public static final String POSTLINK = HOMEPAGE + "post";
 	public static final String REVISIONSLINK = HOMEPAGE + "revisions";
