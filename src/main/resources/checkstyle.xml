@@ -20,11 +20,6 @@
 			<property name="message" value="Line has trailing whitespace."/>
 			<property name="ignoreComments" value="true"/>
 		</module>
-		<module name="RegexpSinglelineJava">
-			<property name="format" value="^\t* +\t*\S"/>
-			<property name="message" value="Line has leading space characters; Only tabs are allowed!"/>
-			<property name="ignoreComments" value="true"/>
-		</module>
 
 		<!--Checks for Javadoc comments.-->
 <!--		<module name="JavadocType"/>

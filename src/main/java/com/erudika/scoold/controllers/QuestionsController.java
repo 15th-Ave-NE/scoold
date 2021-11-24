@@ -287,7 +287,8 @@ public class QuestionsController {
 		final String type = Utils.type(Question.class);
 		final Profile authUser = utils.getAuthUser(req);
 		final String currentSpace = utils.getSpaceIdFromCookie(authUser, req);
-		final String query = getQuestionsQuery(req, authUser, sortby, currentSpace, itemcount);
+		final String query = authUser != null ?
+			getQuestionsQuery(req, authUser, sortby, currentSpace, itemcount) : utils.getAllSpaceFilteredQuery();
 
 		if (!StringUtils.isBlank(filter) && authUser != null) {
 			if ("favtags".equals(filter)) {
@@ -339,7 +340,8 @@ public class QuestionsController {
 		return sb.toString();
 	}
 
-	private String getQuestionsQuery(HttpServletRequest req, Profile authUser, String sortby, String currentSpace, Pager p) {
+	private String getQuestionsQuery(final HttpServletRequest req, final Profile authUser, final String sortby,
+									 final String currentSpace, final Pager p) {
 		boolean spaceFiltered = isSpaceFilteredRequest(authUser, currentSpace);
 		String query = utils.getSpaceFilteredQuery(req, spaceFiltered, null, utils.getSpaceFilter(authUser, currentSpace));
 		if ("activity".equals(sortby)) {

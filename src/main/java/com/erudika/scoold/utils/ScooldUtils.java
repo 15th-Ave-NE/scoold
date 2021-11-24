@@ -1238,6 +1238,10 @@ public final class ScooldUtils {
 		return "scooldspace".equals(s) ? space : s;
 	}
 
+	public String getAllSpaceFilteredQuery() {
+		return "*";
+	}
+
 	public String getSpaceFilteredQuery(Profile authUser, String currentSpace) {
 		return canAccessSpace(authUser, currentSpace) ? getSpaceFilter(authUser, currentSpace) : "";
 	}
