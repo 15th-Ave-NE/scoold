@@ -1,12 +1,4 @@
 <!DOCTYPE html>
- <!--                       __    __
-     ______________  ____  / /___/ /
-    / ___/ ___/ __ \/ __ \/ / __  /
-   (__  ) /__/ /_/ / /_/ / / /_/ /
-  /____/\___/\____/\____/_/\__,_/
-
-  https://scoold.com
- -->
  <html lang="$!currentLocale.language" dir="$!langDirection">
  	<head>
  		<title>$!APPNAME | $!title</title>
@@ -22,11 +14,6 @@
  		<meta property="og:url" content="$!request.getRequestURL()">
  		<meta property="og:image" content="$!ogimage">
  		<meta property="og:description" content="$!description">
- 		<meta name="twitter:card" content="summary">
- 		<meta name="twitter:site" content="@getscoold">
- 		<meta name="twitter:title" content="$!APPNAME | $!title">
- 		<meta name="twitter:description" content="$!description">
- 		<meta name="twitter:image" content="$!ogimage">
  		<link href="$!request.contextPath/opensearch.xml" title="$!APPNAME" type="application/opensearchdescription+xml" rel="search">
  		<link href="$!request.contextPath/feed.xml" rel="alternate" type="application/atom+xml" title="New questions feed">
  		<link href="$!ogimage" rel="image_src">
